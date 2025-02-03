@@ -1,5 +1,7 @@
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert("Your message has been sent. We will get back to you soon!");
-    this.reset();
+// JavaScript to toggle the navbar
+const toggleButton = document.getElementById('navbar-toggle');
+const navbarLinks = document.getElementById('navbar-links');
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active');
 });
