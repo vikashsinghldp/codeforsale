@@ -11,38 +11,132 @@ body, html {
     max-width: 1200px;
     margin: 0 auto;
 }
-
-header {
-    background: #007BFF;
-    color: white;
-    padding: 20px 0;
+.container .feature{
+  width: 300px;
+  height: 200px;
+  background: #066cab;
+  border-radius: 10px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-header h1 {
-    margin: 0;
+
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002140;
+  padding: 5px 20px;
+}
+
+.navbar-logo .logo {
+  width: 180px;
+  height: 50px;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.8s ease,transform 0.8s ease;
+}
+
+.navbar-links li {
+  margin: 0 10px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  transition: background 1s;
+}
+
+.navbar-links a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
+/* Navbar Toggle (for small screens) */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #002140;
+    position: absolute;
+    top:50px;
+    left: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    z-index: 2000;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
     text-align: center;
+  }
+
+  .navbar-links.active {
+    display: flex;
+     opacity: 1;
+    transform: translateY(0);
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
 }
 
-header nav {
-    text-align: center;
-    margin-top: 10px;
-}
-
-header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
 
 #hero {
-    background: #f4f4f4;
+    
     text-align: center;
     padding: 50px 20px;
+    color: white;
+    background: rgba(0,0,0,0.3);
+    height: 200px;
+    
+    
+}
+#hero::before{
+  content: "";
+  height: 300px;
+  background: url('images/bg1.jpeg');
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  top: 63px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  z-index: -12;
+  
 }
 
 #hero h2 {
     margin: 0;
+    opacity: 1;
 }
 
 #hero .btn {
@@ -69,8 +163,11 @@ header nav a {
 
 .feature {
     width: 45%;
-    margin: 10px 0;
-    text-align: left;
+    margin: 10px 20px;
+}
+.feature img{
+  width: 50px;
+  padding: 10px;
 }
 
 .pricing-cards {
@@ -80,26 +177,30 @@ header nav a {
 }
 
 .card {
-    width: 30%;
+    width: 300px;
     background: #f4f4f4;
-    padding: 20px;
-    border: 1px solid #ddd;
+    padding: 5px;
     margin: 10px 0;
+    border-radius: 10px;
 }
 
 .card h3 {
     margin: 0 0 10px;
 }
 
-.card .btn {
+.card .btn{
     background: #007BFF;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     margin-top: 10px;
+    border-radius: 10px;
 }
-
+.card ul li{
+  
+  text-align: left;
+}
 form {
     max-width: 500px;
     margin: 0 auto;
@@ -125,4 +226,22 @@ footer {
     color: white;
     padding: 20px 0;
     text-align: center;
+}
+.pink{
+  color: violet;
+}
+.bold{
+  font-weight: 500;
+}
+.bg-violet{
+  background: violet !important;
+}
+.green{
+  color: green;
+}
+.bg-green{
+  background: green !important;
+}
+.blue{
+color:#007BFF;
 }
