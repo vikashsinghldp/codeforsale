@@ -119,7 +119,7 @@ body, html {
 #hero::before{
   content: "";
   height: 300px;
-  background: url('images/bg1.jpeg');
+  background: url('img/bg1.jpeg');
   background-repeat: no-repeat;
   position: absolute;
   background-position: center;
