@@ -9,18 +9,27 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container">
-            <h1>CodeForSale.online</h1>
-            <nav>
-                <a href="#features">Features</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
+<nav class="navbar">
+    <div class="navbar-logo">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      
+    </div>
+    <div class="navbar-toggle" id="navbar-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="navbar-links" id="navbar-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero">
+    <section id="hero" class="hero">
         <div class="container">
             <h2>We Build Modern and Responsive Websites</h2>
             <p>Your dream website is just a click away. Affordable, professional, and tailored to your needs!</p>
@@ -34,20 +43,19 @@
             <h2>Our Features</h2>
             <div class="feature-list">
                 <div class="feature">
+                  <img src="images/1.png">
                     <h3>Responsive Design</h3>
                     <p>Websites that look stunning on all devices.</p>
                 </div>
                 <div class="feature">
+                  <img src="images/custom.png">
                     <h3>Custom Development</h3>
                     <p>Tailored solutions to fit your business needs.</p>
                 </div>
                 <div class="feature">
+                  <img src="images/seoo.png">
                     <h3>SEO Optimization</h3>
                     <p>Rank higher on search engines with our SEO expertise.</p>
-                </div>
-                <div class="feature">
-                    <h3>Fast Delivery</h3>
-                    <p>Get your website delivered within the promised timeframe.</p>
                 </div>
             </div>
         </div>
@@ -59,28 +67,28 @@
             <h2>Pricing</h2>
             <div class="pricing-cards">
                 <div class="card">
-                    <h3>Basic Plan</h3>
-                    <p>$99</p>
+                    <h3 class="pink">Basic Plan</h3>
+                    <p class="pink bold">$99</p>
                     <ul>
-                        <li>1 Page Website</li>
+                        <li> 1 Page Website</li>
                         <li>Basic Design</li>
                         <li>Responsive Layout</li>
                     </ul>
-                    <button class="btn">Choose Plan</button>
+                    <button class="btn bg-violet">Choose Plan</button>
                 </div>
                 <div class="card">
-                    <h3>Standard Plan</h3>
-                    <p>$199</p>
+                    <h3 class="green">Standard Plan</h3>
+                    <p class="green">$199</p>
                     <ul>
                         <li>5 Page Website</li>
                         <li>Custom Design</li>
                         <li>SEO Optimized</li>
                     </ul>
-                    <button class="btn">Choose Plan</button>
+                    <button class="btn bg-green">Choose Plan</button>
                 </div>
                 <div class="card">
-                    <h3>Premium Plan</h3>
-                    <p>$399</p>
+                    <h3 class="blue">Premium Plan</h3>
+                    <p class="blue">$399</p>
                     <ul>
                         <li>10+ Pages</li>
                         <li>Advanced Features</li>
